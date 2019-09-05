@@ -1,0 +1,10 @@
+<h2>Sneakers</h2>
+
+{{#each sneakers}}
+<h3>{{this.name}}</h3>
+<img src="{{this.photo}}" alt="{{this.name}}">
+<a href="/sneakers/{{this._id}}">
+  <button>See details</button>
+</a>
+<br>
+{{/each}}
